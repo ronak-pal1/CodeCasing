@@ -220,6 +220,11 @@ header{
     color: white;
 }
 
+.fa-linkedin{
+    background-color: #173de3;
+    color: white;
+}
+
 .about-page-container-journey-container{
     margin-top: 50px;
     max-width: 900px;
@@ -229,6 +234,7 @@ header{
     margin-right: auto;
     background-color: #f1edf8;
     border-radius: 20px;
+    display: none;
 }
 
 

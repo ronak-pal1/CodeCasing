@@ -4,6 +4,7 @@ var menuCountCheck = false;
 
 window.addEventListener("load",function(){
     document.getElementById("page-loader-animation-section-id").style.display="none";
+    document.getElementById("about-page-container-journey-container-id").style.display="block";
 });
 
 
