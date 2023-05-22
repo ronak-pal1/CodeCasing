@@ -8,11 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #0f0e0e;
-    /* background: linear-gradient(#0f0e0e , #524d4d); */
-}
-
 /* This part is for the page loading animation effect*/
 .page-loader-animation-section{
     width: 100%;
@@ -128,7 +123,37 @@ header{
   }
 
 
+/* This is for the contribution page */
+.contributors-page-header{
+    color: whitesmoke;
+    font-size: 50px;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 40px;
+}
 
+.contributors-page-container .contributors-profile-images{
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 40px;
+   text-align: center;
+}
+
+.contributors-page-container .contributors-profile-images a{
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.contributors-page-container .contributors-profile-images a img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 10px;
+ }
 
 
 /* This is for the about page */
@@ -610,50 +635,7 @@ footer .container .footerInformation .copyrightSection{
     color: #fff;
 }
 
-footer .container .footerInformation .footerPrivacyPolicySection{
-    text-align: center;
-}
-
-footer .container .footerInformation .footerPrivacyPolicySection a{
-    font-size: 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .container .footerInformation .createdbySection{
-    text-align: center;
-    margin: 30px;
-    font-size: 25px;
-    color: #65DFE3;
-    font-family: 'Grape Nuts', cursive;
-}
-
-
- 
-.footerSubContainer{
-    position: relative;
-    width:auto;
-    margin-right: 30px;
-}
-.footerSubContainer ul li{
-    list-style-type: none;
-}
-.footerSubContainer ul li a{
-    color:#999;
-    text-decoration:none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.footerSubContainer ul li a:hover{
-    color:#fff;
-}
-
 /* This is for the mobile part */
-
-@media (max-width:1185px)
-{   
-    
-}
 
  @media (max-width:991px)
 {   
@@ -670,7 +652,7 @@ footer .container .footerInformation .createdbySection{
         display: none;
     }
 
-    .about-page-header, .code-to-image-page-header{
+    .contributors-page-header, .about-page-header, .code-to-image-page-header{
         margin-top: 150px;
         font-size: 37px;
     }
@@ -686,7 +668,7 @@ footer .container .footerInformation .createdbySection{
         font-size: 25px;
     }
 
-    .about-page-header, .code-to-image-page-header{
+    .contributors-page-header, .about-page-header, .code-to-image-page-header{
         font-size: 35px;
     }
 
@@ -735,7 +717,7 @@ footer .container .footerInformation .createdbySection{
         font-size: 0.8rem;
     }
 
-    .about-page-header, .code-to-image-page-header{
+    .contributors-page-header, .about-page-header, .code-to-image-page-header{
         font-size: 30px;
     }
 
@@ -743,9 +725,6 @@ footer .container .footerInformation .createdbySection{
 
 @media (max-width:740px){
     
-    footer .container .footerAbout p{
-        font-size: 12px;
-    }
     footer .container .footerInformation .footerHeader{
         font-size: 23px;
     }
@@ -764,8 +743,12 @@ footer .container .footerInformation .createdbySection{
     footer .container .footerAbout p{
         text-align: center;
     }
+
+    footer{
+        padding: 30px 30px;
+    }
     footer .container .footerAbout{
-        width:80%;
+        width:90%;
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -805,7 +788,12 @@ footer .container .footerInformation .createdbySection{
         text-decoration: none;
         margin: 5px 2px;
         border-radius: 50%;
-      }
+    }
+
+    .contributors-page-container .contributors-profile-images a img{
+        width: 50px;
+        height: 50px;
+     }
 
 }
 
@@ -836,34 +824,12 @@ footer .container .footerInformation .createdbySection{
 
 @media (max-width:510px){
 
-    .footerSubContainer{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-    }
-
-    .footerSubContainer h2{
-        text-align: center;
-    }
-
-    .footerSubContainer ul li{
-        list-style-type: none;
-        text-align: center;
-    }
-    .footerSubContainer ul li a{
-        color:#999;
-        text-decoration:none;
-        margin-bottom: 10px;
-        display: inline-block;
-    }
-
     header .headerNavigation li a{
        font-size: 10px;
     }
    
 
-    .about-page-header, .code-to-image-page-header{
+    .contributors-page-header, .about-page-header, .code-to-image-page-header{
         font-size: 25px;
     }
 
@@ -899,7 +865,7 @@ footer .container .footerInformation .createdbySection{
         color: rgb(0, 153, 0);
     }
 
-    #code-to-image-page-tools-section-range-Field{
+     #code-to-image-page-tools-section-range-Field{
         width: 220px;
      }
      
@@ -938,9 +904,6 @@ footer .container .footerInformation .createdbySection{
 
 @media (max-width: 430px)
 {   
-    footer .container .footerAbout p{
-        font-size: 10px;
-    }
 
     footer .container .footerInformation .footerHeader {
         font-size: 17px;
@@ -956,10 +919,6 @@ footer .container .footerInformation .createdbySection{
 
     .faq-section .faq-section-header{
         font-size: 23px;
-    }
-
-    .features-section .featuresGridContainer{
-        margin-top: 70px;
     }
 
     section .accordion-container{
