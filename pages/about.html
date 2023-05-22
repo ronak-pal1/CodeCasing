@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>webName: Convert to Images</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/ico" sizes="48x48" href="../assests/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assests/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assests/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assests/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="page-loader-animation-section" id="page-loader-animation-section-id">
+        <img src="../assests/logo.png">
+    </div>
+
+    <header>
+        <div class="container" onclick="menuFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="headerLogoNameContainer">
+            <img class="headerLogo" src="../assests/logo.png">
+            <a href="../index.html" class="headerName">CodeCase</a>
+        </div>
+
+        <ul class="headerNavigation" id="headerNavigationId">
+            <li><a href="converters.html">Contributors</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">GitHub Repo 🍴</a></li>
+        </ul>
+    </header>
+
+    <div class="about-page-header">
+        About
+    </div>
+
+    <div class="about-page-container">
+        <div class="about-page-container-profile-img">
+            <img src="../assests/profile.png">
+        </div>
+
+        <div class="about-page-container-profile-description">
+            Hii, my name is ronak paul. I am currently in first year of my bachelor's degree in computer science. And I am 19 years old.<br>
+            This website is related to programming. Here you can find various blog related to programming, roadmaps for various domains and also 
+            we provide some tools like making custom tweets, converting codes of various lanagues to images and also notes to images. 
+            In the future I would add more features in this website. So keep visiting our website and read our blogs to grow your coding 
+            journey.
+        </div>
+
+        <div class="about-page-container-contact-header">Contact</div>
+        <div class="about-page-container-contact-container">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="about-page-container-journey-container">
+
+            <pre class="mermaid">
+                timeline
+                    title My coding journey
+                    2018 : got introduced with markup language : HTML
+                    2019 : C
+                         : Java 
+                         : JavaScript
+                         : CSS
+                    2020 : C++
+                         : Deep dive into java
+                         : Little bit of android development
+                    2021 : XML
+                         : MySQL
+                    2022 : DSA
+                         : Git & Github
+                    2023 : Learning DevOps
+            </pre>  
+
+        </div>
+    </div>
+
+
+    <script src="../script/scriptJS.js"></script>
+
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    </script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L17.1,229.3C34.3,235,69,245,103,229.3C137.1,213,171,171,206,144C240,117,274,107,309,90.7C342.9,75,377,53,411,53.3C445.7,53,480,75,514,90.7C548.6,107,583,117,617,128C651.4,139,686,149,720,138.7C754.3,128,789,96,823,101.3C857.1,107,891,149,926,186.7C960,224,994,256,1029,250.7C1062.9,245,1097,203,1131,160C1165.7,117,1200,75,1234,80C1268.6,85,1303,139,1337,165.3C1371.4,192,1406,192,1423,192L1440,192L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+    <footer>
+        <div class="container">
+            <div class="footerAbout">
+                <h2>Hii 👋</h2>
+                <p> My name is ronak and I am a developer. This is a github repository of codecasing website. It is hosted by github pages.
+                    If anyone wants to contribute to this repository then fork the repository from the link in the header and don't forgot to
+                    add yourself in the contributors list with a image. Looking forward to your collaboration in this project. ❤
+                </p>
+            </div>
+
+            <div class="footerInformation">
+                <img class="footerLogo" src="../assests/logo.png">
+                <p class="footerHeader">codecasing</p>
+                <p class="copyrightSection">Copyright &copy; 2023 by CodeCasing</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
