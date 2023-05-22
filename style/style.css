@@ -143,11 +143,6 @@ header{
    text-align: center;
 }
 
-.contributors-page-container .contributors-profile-images a{
-    margin-left: auto;
-    margin-right: auto;
- }
-
 .contributors-page-container .contributors-profile-images a img{
     width: 80px;
     height: 80px;
