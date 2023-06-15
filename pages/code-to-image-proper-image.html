@@ -37,6 +37,11 @@
 
     <script>
         document.getElementById("code-to-image-page-text-container-id").innerText = sessionStorage.getItem("text");
+        let preElements = document.getElementsByTagName("pre");
+        let codeElements = document.getElementsByTagName("code");
+
+        preElements[0].className = sessionStorage.getItem("lang");
+        codeElements[0].className = sessionStorage.getItem("lang");
     </script>
     
 </body>

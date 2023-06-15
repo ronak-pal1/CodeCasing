@@ -38,8 +38,29 @@
         CONVERT YOUR CODES TO IMAGES
     </div>
 
+    <div class="code-to-image-language-selector-container" >
+        <select class="code-to-image-language-selector" id="language-selector" onchange="selectLang()">
+            <option value="language-javascript">Javascript</option>
+            <option value="language-java">Java</option>
+            <option value="language-cpp">C++</option>
+            <option value="language-c">C</option>
+            <option value="language-csharp">C#</option>
+            <option value="language-python">Python</option>
+            <option value="language-ruby">Ruby</option>
+            <option value="language-perl">Perl</option>
+            <option value="language-php">PHP</option>
+            <option value="language-go">Go</option>
+            <option value="language-r">R</option>
+            <option value="language-git">Git</option>
+            <option value="language-sql">SQL</option>
+            <option value="language-yaml">YAML</option>
+            <option value="language-docker">Docker</option>
+            <option value="language-css">CSS</option>
+        </select>
+    </div>
+
     <div class="code-to-image-page-container">
-        <textarea class="code-to-image-page-textarea" id="code-to-image-page-textarea-id" placeholder="Paste the Code">console.log("Hello")</textarea>
+        <textarea class="code-to-image-page-textarea" id="code-to-image-page-textarea-id" placeholder="Paste the Code">console.log("Hello World")</textarea>
         <div class="code-to-image-page-button" id="code-to-image-page-button-id">Generate</div>
 
         <div class="code-to-image-page-main-container" id="code-to-image-page-main-container-id">
@@ -49,7 +70,7 @@
                 <div class="circle3"></div>
     
                 <div class="code-to-image-page-text-container">
-                    <pre><code class="language-javascript" id="code-to-image-page-text-container-id">console.log("Hello")</code></pre>
+                    <pre><code class="language-javascript" id="code-to-image-page-text-container-id">console.log("Hello World")</code></pre>
                 </div>
             </div>
         </div>
@@ -62,7 +83,7 @@
                     <div class="circle3"></div>
         
                     <div class="code-to-image-page-hidden-text-container">
-                        <pre><code class="language-javascript" id="code-to-image-page-hidden-text-container-id">console.log("Hello")</code></pre>
+                        <pre><code class="language-javascript" id="code-to-image-page-hidden-text-container-id">console.log("Hello World")</code></pre>
                     </div>
                 </div>
             </div>
@@ -77,17 +98,28 @@
                 </div>
             </div>
 
-            <input type="range" min="3" max="50" value = "25" id="code-to-image-page-tools-section-range-Field" step="1"></input>
+            <input type="range" min="3" max="50" value = "21" id="code-to-image-page-tools-section-range-Field" step="1"></input>
 
             <div class="code-to-image-page-tools-section-background-selection">
                 <div class="code-to-image-page-tools-section-background-selection-initial" id="code-to-image-page-tools-section-background-selection-initial-id" onclick="backgroundColorMenuOnOFF()"></div>
                 <div class="code-to-image-page-tools-section-background-selection-all-background" id="code-to-image-page-tools-section-background-selection-all-background-id"  style="display: none;">
-                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col1-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(4, 121, 231), rgb(5, 196, 213)); border:2px solid whitesmoke";></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col1-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(4, 121, 231), rgb(5, 196, 213));"></div>
                     <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col2-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(197, 231, 4), rgb(15, 5, 213));"></div>
                     <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col3-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(7, 56, 131), rgb(213, 5, 123));"></div>
                     <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col4-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(4, 231, 159), rgb(5, 213, 57));"></div>
                     <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col5-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(205, 152, 18), rgb(41, 54, 53));"></div>
                     <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col6-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(5, 2, 28), rgb(163, 24, 54));"></div>
+
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col7-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom right, #9600FF, #AEBAF8);"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col8-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to right, #42275a, #734b6d);"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col9-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to right, #de6262, #348ee9);"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col10-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(rgb(12, 90, 206), rgb(213, 126, 5), rgb(232, 11, 100));"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col11-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(rgb(4, 57, 231), rgb(213, 5, 78), rgb(5, 213, 57));"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col12-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom right, #F6EA41, #F048C6);"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col13-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom right, #43049b, #d1b33a);"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col14-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom left, rgb(199, 198, 206), rgb(236, 43, 152));"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col15-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, rgb(230, 125, 233), rgb(10, 19, 133));"></div>
+                    <div class="code-to-image-page-tools-section-background-selection-all-background-col" id="code-to-image-page-tools-section-background-selection-all-background-col16-id" onclick="backgroundColorChange(this.id)" style="background-image: linear-gradient(to bottom, #ede8ec, #f8e4f3);"></div>
                 </div>
             </div>
         </div>
@@ -217,6 +249,34 @@
 
                 });
 
+                document.getElementById("code-to-image-page-tools-section-height-id").addEventListener("keypress", function(event){
+
+                    if (event.key === "Enter") {
+                        
+                        //changing the width and height
+                        var containerWidth = document.getElementById("code-to-image-page-tools-section-width-id").value;
+                        var containerHeight = document.getElementById("code-to-image-page-tools-section-height-id").value;
+                        var screenWidth = screen.width;
+
+                        // storing the width and height on the local storage 
+                        sessionStorage.setItem("width", containerWidth);
+                        sessionStorage.setItem("height", containerHeight);
+
+                        if(screenWidth > 1400)
+                        {            
+                            document.getElementById("code-to-image-page-main-container-id").style.width = containerWidth + "px";
+                            document.getElementById("code-to-image-page-main-container-id").style.height = containerHeight + "px";
+                        }
+                        
+                        document.getElementById("code-to-image-page-hidden-main-container-id").style.width = containerWidth + "px";
+                        document.getElementById("code-to-image-page-hidden-main-container-id").style.height = containerHeight + "px";
+
+                    }
+
+                });
+
+                
+
 
                 // This function is use to change the text size of the code to image div
                 document.getElementById("code-to-image-page-tools-section-range-Field").addEventListener("change", function(event){
@@ -237,20 +297,44 @@
 
                     sessionStorage.setItem("background", backgroundColor);
                     
-                    // first removing border from the previously selected color
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col1-id").style.border="none";
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col2-id").style.border="none";
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col3-id").style.border="none";
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col4-id").style.border="none";
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col5-id").style.border="none";
-                    document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col6-id").style.border="none";
+                    // // first removing border from the previously selected color
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col1-id").style.border="none";
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col2-id").style.border="none";
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col3-id").style.border="none";
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col4-id").style.border="none";
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col5-id").style.border="none";
+                    // document.getElementById("code-to-image-page-tools-section-background-selection-all-background-col6-id").style.border="none";
 
 
                     // Now setting the border for the current selected color
-                    document.getElementById(id).style.border="2px solid whitesmoke";
+                    //document.getElementById(id).style.border="2px solid whitesmoke";
                     document.getElementById("code-to-image-page-main-container-id").style.backgroundImage = backgroundColor;
                     document.getElementById("code-to-image-page-hidden-main-container-id").style.backgroundImage = backgroundColor;
+                    document.getElementById("code-to-image-page-tools-section-background-selection-initial-id").style.backgroundImage = backgroundColor;
 
+                }
+
+
+
+                // This is for the selection of the languages
+
+                function selectLang()
+                {   
+                    let preElements = document.getElementsByTagName("pre");
+                    let codeElements = document.getElementsByTagName("code");
+
+                    let lang = document.getElementById("language-selector").value;
+                    
+                    sessionStorage.setItem("lang", lang);
+
+                    preElements[0].className = lang;
+                    preElements[1].className = lang;
+
+                    codeElements[0].className = lang;
+                    codeElements[1].className = lang;
+
+
+                    reloadCodeColor();
                 }
 
 
